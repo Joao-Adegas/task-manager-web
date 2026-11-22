@@ -1,0 +1,53 @@
+@use '../variaveis.scss'as *;
+@use './main.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+header{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $azul-padrao;
+    text-align: center;
+    font-family: 'Arial';
+    color: #ffffff;
+    flex-wrap: wrap;
+
+    .titlle{
+        text-align: center;
+    }
+
+    .ul-list{
+        display: flex;
+        gap: 1rem;
+        color: #ffffff;
+        list-style-type: none;
+    }
+
+    .link-header{
+        color: #ffffff;
+        text-decoration: none;
+        outline-color: $texto-branco;
+        outline-offset: 0.3rem;
+
+        @media (max-width:1170px) {
+            font-size: 0.9rem;
+        }
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    .tittle-h1{
+        @media (max-width: 1170px){
+            font-size: 1.7rem;
+        }
+    }
+
+    @media (max-width:1170px) {
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,91 @@
+@use '../variaveis.scss' as *;
+
+
+.section-form{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+    .container-form{
+        font-family: 'Arial';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 500px; /* Largura máxima */
+        min-width: 300px; /* Largura mínima */
+        padding: 40px;
+
+        .title-form{
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2rem;
+        }
+    
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem; 
+            width: 60%;
+
+            .btn{
+                width: auto;
+                padding:0.6rem;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                font-size: 1.1rem;
+                margin: 0 auto;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            
+            .input{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                width: 100%;
+            }
+            
+            input{
+                padding: 12px 16px;
+                border: 2px solid #e1e5e9;
+                border-radius: 8px;
+                font-size: 1rem;
+                transition: all 0.3s ease;
+                outline-color:$azul-padrao;
+            }   
+            input:hover{
+                outline-color:$azul-padrao;
+            }
+            
+            button{
+                border: none;
+                padding: 0.5rem;
+                border-radius: 5px;         
+                color: #ffffff;
+                background-color: $azul-padrao;
+                outline-color: $azul-padrao;
+                outline-offset: 0.2rem;
+            }
+            button:focus{
+                color: white;
+                border: 1px solid white;
+            }
+
+
+        }
+    }
+}
+
+
+.error{
+    color: red;
+    font-weight: bold;    
+}
+
+.meu-titulo .meu-conteudo{
+    font-family: 'Arial';
+}
