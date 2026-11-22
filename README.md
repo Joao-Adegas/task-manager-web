@@ -1,12 +1,43 @@
-# React + Vite
+# Task Manager Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kanban-style interface of a task manager built with **React**. Create users, assign tasks to them and move each task across the *To Do*, *Doing* and *Done* columns.
 
-Currently, two official plugins are available:
+> Backend: [task-manager-api](https://github.com/Joao-Adegas/task-manager-api)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Create users to be responsible for tasks
+- Full CRUD for tasks
+- Change a task's status between `To Do`, `Doing` and `Done`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+
+React, JavaScript, npm
+
+## Project structure
+
+```
+src/
+├── App.jsx        # Main component
+└── components/    # Reusable components
+```
+
+## Getting started
+
+### Prerequisites
+
+- Node.js and npm
+- [task-manager-api](https://github.com/Joao-Adegas/task-manager-api) running locally
+
+### Run
+
+```bash
+npm install
+npm run dev
+```
+
+<!-- CONFIRM: start script and where the API base URL is configured -->
+
+## Author
+
+João Pedro dos Santos Adegas — [@Joao-Adegas](https://github.com/Joao-Adegas)
